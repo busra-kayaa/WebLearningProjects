@@ -1,0 +1,231 @@
+<!DOCTYPE html> <!--dokumantın hangi tipte bir dosya olduğu (genellikle kullanılmaz)-->
+<html>
+    <head>
+        <meta charset="UTF-8"/> <!--dosyanın ne tür bir dille yazıldığı-->
+        <title>Test</title>
+        <meta name="description" content="Developer"/><!-- sitenin açıklaması-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"/> <!--anahtar kelimeler-->
+        <meta name="author" content="Büşra Kaya"/><!--web sitesinin sahibi, geliştiricisi, yazar-->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/><!--ölçeklendirme, ekranın boyutlandırılması-->
+        <!-- meta tagı: Sitenin kimliği hakkında bilgi verir.name :hangi özellik ,content: karşılığı, içeriği-->
+        <link
+            href="./style.css"
+            rel="stylesheet"
+            type="text/css"
+        /> <!-- link tagı: hrefle link verip alınan dosyayı burda işletir, komutlarını burda çalıştırır.
+                main kullanımı style.css dosyalarıdır.relevance :alaka,type: tip/tür: text dosyası uzantısı css -->
+        <style>
+            h1{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--yorum satırı-->
+        <a
+            href="https://www.nibgat.com"
+            target="_blank"
+        >
+            <!-- href: yönlendirme
+                 target: nesne hedefe nasıl gidecek -->
+            Deneme
+        </a> <!-- a tagı: link verilince yazı tıklanabilirlik kazanıyor-->
+
+        <br/> <!-- br tagı: bir nevi enter, yazıyı alt satıra atar-->
+        <br/>
+        <b>Deneme1 <!-- b tagı: arasına yazılan yazıyı kalınlaştırır--> </b>
+
+        <br/><br/>
+        <strong>Deneme2 <!--strong tagı: kalın yazma ve ana konuyla ilgili tarayıcıda 
+        öne çıkarılan kısım --> </strong>
+        <br/><br/>
+        <button
+            onclick="alert('Butona bastınız.')"
+        >
+        Merhaba</button> <!-- tetikleme araçları ile kullanılır onclick: tıklama aracı,
+        disabled: tıklanamazlık -->
+        <br/><br/>
+        <code>
+            Yardımcı tag
+        </code> <!-- font-family:monospace özelliği bu-->
+        <br/><br/>
+        <span>span</span> <!--boş kutu, element.style'ı da boş,kendimiz özelleştirmeliyiz-->
+        <br/><br/>
+        <div
+            style="width: 100px; height: 100px; background-color:rgb(255, 0, 225);"
+        >
+            Ben Divim
+        </div> <!-- sadece display: blockla gelir. Kutu gibi davranır. -->
+        <br/><br/>
+        <form
+            action="..."
+            method="get"
+        >
+            <input type="" name="isim-soyisim"/>
+            <button>Gönder</button>
+        </form> <!--Form tasarlama kalıbı, nerde başlayıp nerde biteceğini bilmeye yarar.
+                    action propu form tagının nereye gönderileceğini tutar.Sunucu eğitimlerinde htmlle sunucuyu haberleştirme kısmında detaylı anlatılacak -->
+        <h1>Başlık 1</h1>
+        <h2>Başlık 2</h2>
+        <h3>Başlık 3</h3>
+        <h4>Başlık 4</h4>
+        <h5>Başlık 5</h5>
+        <h6>Başlık 6</h6>
+
+        <hr/> <!--Bu tag düz bir çizgi çeker-->
+        <div
+            style="height: 1px; background-color: #e3e3e3;"
+        >
+        </div>
+        <br/>
+        <!--i tagı -> italic yazı için kullanılır-->
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. <b>Soluta,
+            esse repudiandae quod in doloribus modi
+            culpa dolore eligendi.<i> Omnis neque dolorem quos
+            voluptatem veritatis dolor unde</b></i>
+            odit iusto natus voluptates.
+        <br/><br/>
+        <iframe
+                src="https://www.nibgat.com"
+        >
+        </iframe> <!--iframe tagı: Başka bir html documentini bu documentin içinde açmamızı sağlıyor-->
+        <br/><br/>
+        <img
+            src="./4582548252.jpg"
+            width="100px"
+            height="100px"
+            style="border-radius: 50px;"
+        /> <!-- img tagi: görsel eklemek için kullanılır-->
+        <br/><br/>
+        <input type="number"/>
+        <br/><br/>
+        <input type="text"/>
+        <br/><br/>
+        <input type="date"/>
+        <br/><br/>
+        <input type="time"/> <!-- input tagı: 'girdi' kullanıcının bir veri girmesini sağlar-->
+        <br/><br/>
+        <ol>
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ol>
+        <ol
+            start="9"
+        >
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ol>
+        <ol
+            type="I"
+        >
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ol>
+        <ol
+            type="A"
+        >
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ol>
+        <ol
+            type="a"
+        >
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ol>
+        <ol
+            type="i"
+        >
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ol>
+        <ul>
+            <li>öge1</li>
+            <li>öge2</li>
+            <li>öge3</li>
+        </ul>
+        <ul>
+            <li>öge1</li>
+            <li>öge1</li>
+            <li>öge1</li>
+            <ul>
+                <li>alt öge</li>
+                <li>alt öge</li>
+                <li>alt öge</li>
+
+                <ul>
+                    <li>alt alt öge</li>
+                    <li>alt alt öge</li>
+                    <li>alt alt öge</li>
+                </ul>
+            </ul>
+        </ul>
+        <!--ol/ ul listeleme tagları: ordered list-> sıralanmıs, unordered list ->sıralanmamıs-->
+        <br/>
+        Merhaba <mark>nasılsınız ?</mark> diye sordu.
+        <!-- mark tagı: fosfurlu kalemle çizilmiş gibi -->
+        <noscript>
+            Tarayıcınızda JavaScript desteği kapalı!!! 
+        </noscript> <!--javascript tabanlı kod yazıyorsanız tarayıcıda engellenmiş ise bu tag çalışır.-->
+        <br/><br/>
+        <select></select> <!--tek başına olan hali-->
+        <br/>
+        <select>
+            <option>Deneme</option>
+            <option>Deneme 1</option>
+            <option>Deneme 2</option>
+            <option>Deneme 3</option>
+        </select> <!--seçilebilirlik-->
+        <br/><br/>
+        Lorem ipsum dolor <u>sit amet consectetur adipisicing elit. 
+        Natus quos amet quae</u><!--u tagı: underline arasına alınan metnin altını çizer-->sequi consequuntur recusandae velit 
+        error perspiciatis,<p>aperiam nemo deleniti dicta perferendis 
+        reprehenderit beatae, accusantium eaque minima officia officiis,
+        molestiae facere? Dolor, nam.</p><!-- p tagı:yeni paragraf yapmak için kullanılır--> Ducimus recusandae id asperiores 
+        deserunt sunt aperiam doloremque possimus exercitationem suscipit vero,
+        beatae repudiandae, libero est?
+        <br/><br/>
+        <table
+            border="1"
+        >
+            <th>Başlık1</th>
+            <th>Başlık2</th>
+            <th>Başlık3</th><!--Kalın başlık th taglarını arka arkaya dizerek istediğimmiz sayıda başlık oluşturabiliriz-->
+            <tr>
+                <td>Satır1</td>
+                <td>Satır1</td>
+                <td>Satır1</td><!--tr tagı içine td attıkça sağa doğru satır oluşuyor-->
+            </tr>
+            <tr>
+                <td>Satır2</td>
+                <td>Satır2</td>
+                <td>Satır2</td><!--2. tr içine td atınca 2.satır sağa doğru oluşuyor-->
+            </tr>
+            <tr>
+                <td>Satır3</td>
+                <td>Satır3</td>
+                <td>Satır3</td><!--3. tr içine td atınca 3.satır sağa doğru oluşuyor-->
+            </tr><!--trler satır tdler sütuna denk gelen tagdır.-->
+        </table>
+        <br/><br/>
+        <textarea>text area denemesi</textarea><!--Name verip sunucuya gönderebiliriz. İnput textin çoğul hali olan tag,boyutlandırılabilir.-->
+        <br/><br/>
+        <button onclick="test()">Basınız</button>
+        <script>
+            function test(){
+                alert("Deneme Yapıyorum");
+            }
+        </script>
+
+        <br/><br/>
+        <button onclick="test()">Basınız</button>
+        <script src="./deneme.js"></script>
+    </body>
+</html>
